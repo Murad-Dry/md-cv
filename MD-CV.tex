@@ -1,0 +1,290 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Murad Daryousse} \\
+  \textbf{Data Scientist and Engineer} \\
+  \small +971561101252 $|$ \href{mailto:mdaryousse.ds@gmail.com}{mdaryousse.ds@gmail.com} $|$ 
+  \small Abu Dhabi, UAE $|$
+  \href{https://www.linkedin.com/in/murad-daryousse-1b3886133}{Linkedin} $|$
+  \href{https://www.kaggle.com/janusite}{Kaggle} $|$
+  \href{https://github.com/Murad-Dry}{Github}
+\end{center}
+
+\section*{Summary}
+Results-driven data scientist and ML/Data engineer with a proven track record in developing innovative solutions that drive business insights and efficiencies. Experienced in building and optimizing machine learning models and data pipelines to drive business insights and automation. Adept at translating complex data into actionable strategies and fostering collaboration across cross-functional teams to achieve organizational goals.
+
+\section{Technical Skills}
+\resumeSubHeadingList
+	\resumeItem{\textbf{Programming}}
+	\begin{itemize}
+		\item Python: PyTorch, Keras, Tensorflow, OpenCV, Scikit-learn, Pandas, Numpy, NLTK, Matplot, Django, Flask, FastAPI, Scrapy.
+		\item Java: Spring Boot, Apache Jena.
+		\item Scala
+		\item R
+	\end{itemize}
+	
+	\resumeItem{\textbf{Machine Learning and Deep Learning}}
+	\begin{itemize}
+		\item Supervised, Semi-Supervised, and Unsupervised Learning: Regression, Classification, Clustering, Anomaly Detection.
+		\item Feature Engineering and Model Selection
+		\item Hyperparameter Tuning: Optuna, GridSearchCV, Bayesian Optimization.
+		\item NLP
+		\item Computer Vision
+	\end{itemize}
+	
+	\resumeItem{\textbf{MLOps}}
+	\begin{itemize}
+		\item Model Monitoring and Drift Detection: Evidently AI, WhyLabs.
+		\item Experiment Tracking: MLflow, ClearML
+		\item Data Version Control: DVC
+	\end{itemize}
+	
+	\resumeItem{\textbf{Data Engineering and Analytics}}
+	\begin{itemize}
+		\item Big Data: Apache Hadoop, Apache Spark, Apache Hbase, Apache NIFI, Apache Hive, Apache Impala, Presto/Trino.
+		\item Data Base: MongoDB, PostgresDB, Janusgraph, Neo4j, Oracle, MySQL, SQL, PL/SQL
+		\item Message Brokers: RabbitMQ, Apache Kafka.
+		\item Orchestration: Prefect, Apache Airflow.
+		\item Data Analytics: dbt, Dimensional Modeling.
+		\item Data Visualization: PowerBI.
+		\item Logging and Monitoring: Elasticsearch, Kibana.
+		\item Cloud Computing: AWS Batch, AWS Lake Formation, AWS S3, AWS Kinesis, AWS Glue, AWS ECS, AWS ECR.
+		\item Data Architectures: Data Warehouse, Data Lake/Lakhouse, Data Mesh, Data Fabric, Lambda
+		\item ETL/ELT pipelines 
+	\end{itemize}
+	
+	\resumeItem{\textbf{DevOps}: Git, Github, CircleCI, JFrog, GitLab, CI/CD, Terraform, Docker, Kubernetes, Linux}
+	
+	\resumeItem{\textbf{Semantic Web/Knowledge Graph}: OWL, RDFS, RDF, SPARQL, SWRL}
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingList
+  \resumeSubheading
+      {RoboWell}{Jul 2024 -- Present}
+      {AI-powered autonomous system to optimize and stabilize oil well production}{AIQ}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Engineered and deployed end-to-end machine learning pipelines to continuously train and evaluate inferential models, driving optimized production for oil wells and improving operational efficiency.}
+          \resumeItem{\textbullet\ Designed and implemented Prosper models auto-calibration, which enhanced inferential models accuracy and decision-making processes.}
+          \resumeItem{\textbullet\ Tech Stack: Python, Scikit-learn, smt, MLflow, Prefect, DVC, GitLab}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Novelty Detection for Data Quality}{Jan 2024 -- May 2024} 
+      {Novelty detection models for reports and data marts pipelines quality control}{LigaData}
+      \resumeSubHeadingList
+      	  \resumeItem{\textbullet\ Utilized Local Outlier Factor and Isolation Forest methods as semi-supervised models for detecting abnormal/novel data points}
+          \resumeItem{\textbullet\ Achieved 30\% enhancement in business reports data quality}
+          \resumeItem{\textbullet\ Built a RESTful API for trained models to be used by data pipelines quality checks}
+          \resumeItem{\textbullet\ Tech Stack: Python, Scikit-learn, FastAPI}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+	  {Enterprise Data Lakehouses}{Feb 2022 -- Jul 2024} 
+	  {Data lakehouses projects tailored for mobile operators using Data Flare Platform}{LigaData}
+	  \resumeSubHeadingList
+	  	  \resumeItem{\textbullet\ Led data engineering team in implementing data lakehouse and analytics solutions in multiple OpCos: MTN Congo, MTN South Sudan, MTN Zambia, and Zain South Sudan}		
+		  \resumeItem{\textbullet\ Developed and deployed ETL/LET and analytics pipelines}
+		  \resumeItem{\textbullet\ Built reports, data marts, and business semantic layer}
+		  \resumeItem{\textbullet\ Modeled data for analysis using dimensional modeling methods}
+		  \resumeItem{\textbullet\ Tech Stack: Cloudera, Hadoop, Spark, Kafka, Hive, Hbase, Presto, Impala, MongoDB, Airflow, NIFI, Python, Scala, SQL, DSL, dbt, Talend}
+	  \resumeSubHeadingListEnd
+  \resumeSubheading
+	  {Flare Time Machine}{Jan 2023 -- Jul 2024} 
+	  {Big data management, archiving, and protection solution}{LigaData}
+	  \resumeSubHeadingList
+		  \resumeItem{\textbullet\ Led data engineering team to implement data archiving, management, and retention policies for multiple OpCos: MTN Ghana, and MTN Uganda}
+		  \resumeItem{\textbullet\ Customized and deployed Flare Time machine product for different OpCos}
+		  \resumeItem{\textbullet\ Modeled data for analysis using dimensional modeling methods}
+		  \resumeItem{\textbullet\ Tech Stack: Cloudera, Hadoop, Presto, Airflow, Scala, SQL, Shell Scripts.}
+	  \resumeSubHeadingListEnd
+  \resumeSubheading
+	{Meta Coverage Data}{Feb 2022 -- Dec 2022} 
+	{ETL pipeline for providing Meta (Facebook) with MTN coverage data}{LigaData}
+	\resumeSubHeadingList
+		\resumeItem{\textbullet\ Developed ETL pipelines to provide Meta with coverage data for multiple MTN OpCos: MTN Zambia, MTN Uganda, and MTN Nigeria}
+		\resumeItem{\textbullet\ Built data quality monitoring dashboards for coverage data SLA with Meta}
+		\resumeItem{\textbullet\ Tech Stack: Cloudera, Hadoop, Hive, Presto, Airflow, Python, SQL, Shell Scripts.}
+	\resumeSubHeadingListEnd	
+  \resumeSubheading
+	{Duwaween Games}{Feb 2021 -- Feb 2022} 
+	{Collection of card games}{KuwaitNet}
+	\resumeSubHeadingList
+		\resumeItem{\textbullet\ Developed data meshes and event-driven micro-services}
+		\resumeItem{\textbullet\ Tech Stack: Python, Django, Spring Boot, Redis, AWS, Docker, Kubernetes, RabbitMQ.}
+	\resumeSubHeadingListEnd 
+  \resumeSubheading
+	  {Fake News Detection}{Aug 2020 -- Dec 2020} 
+	  {Fake new detection platform}{Almeta}
+	  \resumeSubHeadingList
+		  \resumeItem{\textbullet\ Architected social media and news websites data scraping platform}
+		  \resumeItem{\textbullet\ Utilized NLP methods and tools to clean and preprocess textual data for ML training and inference}
+		  \resumeItem{\textbullet\ Trained PassiveAggressive classifier as an online ML method to news to fake or real}
+		  \resumeItem{\textbullet\ Achieved 92\% accuracy score on the news dataset}
+		  \resumeItem{\textbullet\ Tech Stack: Scrapy, Python, Pandas, Scikit-learn, NLTK, Kafka, Redis, CircleCI, Terraform, AWS.}
+	  \resumeSubHeadingListEnd	
+   \resumeSubheading
+	   {Social Listening Platform}{Feb 2020 -- Aug 2020} 
+	   {Collecting, extracting and analyzing data from social media for sentiment analysis and getting insights}{HiFi}
+	   \resumeSubHeadingList
+		   \resumeItem{\textbullet\ Designed and implemented social media data scraping platform}
+		   \resumeItem{\textbullet\ Used NLP to clean and preprocess textual data for ML training and inference}
+		   \resumeItem{\textbullet\ Utilized LSTM with SVM to identify the sentiment of texts}
+		   \resumeItem{\textbullet\ Achieved 94\% accuracy score on tweets dataset}
+		   \resumeItem{\textbullet\ Tech Stack: Python, Scrapy, Scikit-learn, Keras, Tensorflow, NLTK, Hadoop, Hbase, Kafka, Spark, Elasticsearch, Kibana.}
+	   \resumeSubHeadingListEnd 
+   \resumeSubheading
+	   {Ekhtar}{Aug 2018 -- Jul 2020} 
+	   {Real-time reporting and crisis detection system}{HiFi}
+	   \resumeSubHeadingList
+		   \resumeItem{\textbullet\ Architected and developed big data platform using lambda architecture}
+		   \resumeItem{\textbullet\ Used NLP to clean and preprocess textual data for ML training and inference}
+		   \resumeItem{\textbullet\ Built a knowledge graph framework for crisis detection and tracking}
+		   \resumeItem{\textbullet\ Tech Stack: Kafka, Hadoop, Spark, Hbase, Elasticsearch, SQL, MySQL, XMPP, Java, Python, Semantic Tech (Knowledge Graph), NLTK, Docker, Linux.}
+	   \resumeSubHeadingListEnd
+   \resumeSubheading
+	   {Mobile Regulation Center (MRC)}{Jun 2016 -- Jul 2019} 
+	   {Mobile devices regulation system to detect and prevent their smuggling}{HiFi}
+	   \resumeSubHeadingList
+		   \resumeItem{\textbullet\ Developed ML model for detecting mobile devices smuggling with 93\% accuracy}
+		   \resumeItem{\textbullet\ Developed Back-end and web APIs}
+		   \resumeItem{\textbullet\ Tech Stack: Scikit-learn, python, Oracle, PL/SQL, ORDS, PHP, MySQL, Java Spring Boot}
+	   \resumeSubHeadingListEnd  
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {ML/Data Consultant}{Jul 2024 -- Present}
+      {AIQ}{Abu Dhabi, UAE}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Spearheaded initiatives and implemented proof-of-concept projects leveraging modern MLOps and data orchestration tools. This achieved a 60\% improvement in development productivity, ML models traceability, ML/data pipeline reproducibility, and operational observability.}
+          \resumeItem{\textbullet\ Designed and built scalable AI and ML solutions to optimize oil production, enhancing the well's efficiency and stability.}
+          \resumeItem{\textbullet\ Partnered with cross-functional teams, driving the successful delivery of AI solutions aligned with business objectives and technical requirements.}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Data Analytics Team Lead}{Dec 2023 -- Jul 2024}
+      {LigaData}{Dubai, UAE}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Managed a team of 5 data analytics engineers, overseeing project timelines and deliverables.}
+          \resumeItem{\textbullet\ Spearheaded the implementation of cutting-edge data solutions.}
+          \resumeItem{\textbullet\ Supervised data lakehouse projects for multiple telecom OpCos.}
+          \resumeItem{\textbullet\ Developed ML models for outliers/novelty detection for data quality control.}
+          \resumeItem{\textbullet\ Led Flare Time Machine product implementation and deployment for data archiving, data storage tiering, and data protection for multiple telecom OpCos.}
+          \resumeItem{\textbullet\ Conducted performance reviews and provided technical training to the team.}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+	  {Senior Data Engineer}{Feb 2022 -- Dec 2023}
+	  {LigaData}{Dubai, UAE}
+	  \resumeSubHeadingList
+		  \resumeItem{\textbullet\ Developed business semantic reports and data marts.}
+		  \resumeItem{\textbullet\ Developed ETL/ELT pipelines into data lakehouses.}
+		  \resumeItem{\textbullet\ Implemented data quality dashboards.}
+		  \resumeItem{\textbullet\ Developed CI/CD pipelines.}
+		  \resumeItem{\textbullet\ Led the development of advanced data architecture and integration solutions.}
+		  \resumeItem{\textbullet\ Mentored junior data engineers, guiding best practices and project execution.}
+		  \resumeItem{\textbullet\ Conducted data quality assurance to ensure data accuracy and consistency across systems.}
+	  \resumeSubHeadingListEnd
+  \resumeSubheading
+	  {Data Science Team Lead}{Jul 2018 -- Feb 2022}
+	  {HiFi}{Damascus, Syria}
+	  \resumeSubHeadingList
+		  \resumeItem{\textbullet\ Led data science and analytics team of 6 data scientists and engineers}
+		  \resumeItem{\textbullet\ Implemented cutting-edge techniques and tools in machine learning, deep learning and artificial intelligence to make data analysis more efficient}
+		  \resumeItem{\textbullet\ Performed large-scale experimentation to identify hidden relationships between variables in large datasets}
+		  \resumeItem{\textbullet\ Createed advanced machine learning algorithms such as regression, simulation, scenario analysis, modeling, clustering, decision trees and , neural networks}
+		  \resumeItem{\textbullet\ Prepared and extract data using ETL/ELT best practices}
+		  \resumeItem{\textbullet\ Coordinated research and analysis activities using unstructured and structured data and use programming to clean and organize data}
+	  \resumeSubHeadingListEnd
+  \resumeSubheading
+ 	  {Big Data Engineer}{Jul 2017 -- Jul 2018}
+	  {HiFi}{Damascus, Syria}
+	  \resumeSubHeadingList
+	  	  \resumeItem{\textbullet\ Designed, built, and maintained big data architectures, systems, and pipelines to handle large datasets.}
+	  	  \resumeItem{\textbullet\ Collected, aggregated, cleansed, transformed, and enriched data from various sources (billing transactions, social media, Apps databases...) to prepare it for analysis, often involving ETL processes.}
+		  \resumeItem{\textbullet\ Stored and managed data in data warehouses, data lakes, and cloud platforms to ensure accessibility and scalability.}
+		  \resumeItem{\textbullet\ Implemented technical processes and business logic to transform data into meaningful information, ensuring quality, governance, and compliance with organizational standards.}
+		  \resumeItem{\textbullet\ Developed NLP solutions for text analysis and knowledge graphs}
+		  \resumeItem{\textbullet\ Implemented big data storage and processing solutions}
+		  \resumeItem{\textbullet\ Modeled data using different modeling techniques (like dimensional models) for analytical queries. }
+		  
+	  \resumeSubHeadingListEnd
+  \resumeSubheading
+	  {Software Engineer}{Jun 2014 -- Jul 2017}
+	  {HiFi}{Damascus, Syria}
+		  \resumeSubHeadingList
+		  \resumeItem{\textbullet\ Designed and developed softwares and applications, following the software development life cycle (SDLC), which includes creating flowcharts, layouts, and documentation to identify requirements and solutions.}
+		  \resumeItem{\textbullet\ Documented software designs, functionality, and updates for future reference, including writing reports to communicate with stakeholders and maintain documentation of IT systems.}
+		  \resumeItem{\textbullet\ Wrote and tested code, ensuring it is well-designed and testable, including debugging and troubleshooting issues to maintain functionality and fix problems.}
+		  \resumeItem{\textbullet\ Deployed, productionized  software and evaluate user feedback to improve features, releasing updates and ensuring compliance with project plans and industry standards.}
+	  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Master of Science in Data Science}{Damascus, Syria}
+      {Damascus University}{Jun 2018 -- Feb 2020}
+  \resumeSubheading
+      {Bachelor of Science in Software Engineering}{Damascus, Syria}
+      {Damascus University}{June 2010 -- Jul 2014}
+\resumeSubHeadingListEnd
+
+\section{Certifications}
+\resumeSubHeadingList
+  \resumeItem{\textbullet\ Data science orientation - IBM - coursera.org/verify/GU38YYGX2N2U}
+\resumeSubHeadingListEnd
+
+\end{document}
